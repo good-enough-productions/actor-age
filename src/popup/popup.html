@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 10px;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin: 0;
+    }
+    .subtitle {
+      font-size: 12px;
+      color: #666;
+      margin: 5px 0 0 0;
+    }
+    .status {
+      padding: 10px;
+      border-radius: 5px;
+      margin: 15px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+    .status.active {
+      background-color: #e8f5e8;
+      color: #2d5a2d;
+      border: 1px solid #c3e6c3;
+    }
+    .status.inactive {
+      background-color: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffeaa7;
+    }
+    .instructions {
+      font-size: 12px;
+      color: #666;
+      line-height: 1.4;
+    }
+    .link {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">🎬</div>
+    <h1 class="title">IMDb Actor Ages</h1>
+    <p class="subtitle">v2.0.0</p>
+  </div>
+  
+  <div id="status" class="status">
+    <span id="status-text">Checking status...</span>
+  </div>
+  
+  <div class="instructions">
+    <p><strong>How to use:</strong></p>
+    <ol>
+      <li>Navigate to any IMDb movie's "Full Cast and Crew" page</li>
+      <li>The extension will automatically add an "Age at Release" column</li>
+      <li>Ages for top 10 actors load automatically</li>
+      <li>Click "Get Age" for other actors</li>
+    </ol>
+    
+    <p>
+      <a href="https://github.com/yourusername/imdb-extension" class="link" target="_blank">
+        View on GitHub
+      </a>
+    </p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
